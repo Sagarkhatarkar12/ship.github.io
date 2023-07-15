@@ -1,0 +1,2315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gandhi felloship</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation-bar {
+            position: relative;
+            position: static;
+
+            display: flex;
+            /* justify-content:  space-between; */
+            padding: 20px 0px;
+            align-items: center;
+            height: 75px;
+            background-color: #243746;
+        }
+
+        .humburgger {
+            /* height: 50px; */
+            /* display: flex; */
+        }
+
+        .hum {
+
+            height: 30px;
+            width: 40px;
+
+        }
+
+        .line {
+            display: inline-block;
+            height: 3px;
+            /* width: 100%; */
+            /* position: absolute; */
+
+            width: 30px;
+
+            /* margin-top: 1px; */
+            background-color: rgb(255, 255, 255);
+        }
+
+        .top {
+            position: absolute;
+            left: 13px;
+            top: 23px;
+            /* position:  absolute; */
+            /* top: 0px; */
+
+        }
+
+        .middle {
+            left: 13px;
+            top: 37px;
+
+            /* position:  absolute; */
+            position: absolute;
+            /* left: 20px; */
+        }
+
+        .bottom {
+            /* position: absolute; */
+            position: absolute;
+            left: 13px;
+            top: 30px;
+        }
+
+        .left-con {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .left-con {
+            margin-left: 40px;
+        }
+
+        img {
+            height: 60px;
+            /* width: 170px; */
+        }
+
+        .sm-l {
+            display: inline-block;
+            position: absolute;
+            top: 10px;
+            left: 286px;
+            height: 50px;
+            width: 1px;
+            background-color: white;
+        }
+
+        .i-2 {
+            margin-left: 20px;
+        }
+
+        .social {
+            font-size: 12px;
+            color: rgb(249, 241, 241);
+            border: 1px solid rgb(237, 228, 228);
+            margin-left: 12px;
+            border-radius: 300px;
+            margin-top: 20px;
+            padding-right: 8px;
+            padding-top: 5px;
+            padding-bottom: 6px;
+            padding-left: 8px;
+            cursor: pointer;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+
+
+        }
+
+        .social:hover {
+            background-color: #84BE39;
+            font-weight: 900;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        i {
+            color: rgb(244, 236, 236);
+        }
+
+        .social-link {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            right: 23%;
+            top: 0px;
+
+        }
+
+        .nav-btn {
+            position: absolute;
+            right: 4%;
+        }
+
+        .btn-h {
+            /* position: absolute; */
+            padding: 7px 9px;
+            background-color: #84BE39;
+            color: white;
+            border: 1px solid #84BE39;
+        }
+
+        .btn-h:hover {
+            background-color: orangered;
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+        }
+
+        .f1 {
+            height: 59vh;
+            width: 100%;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            /* text-align: center; */
+            position: relative;
+            position: absolute;
+            flex-direction: column;
+            background-color: red;
+        }
+
+        .com-t {
+            /* margin: 100px 100px; */
+            position: absolute;
+            bottom: 43%;
+            left: 17%;
+        }
+
+        .f1 {
+            background-image: url("01.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .split {
+            position: absolute;
+            /* background-color: rebeccapurple; */
+            bottom: 4%;
+            left: 40px;
+        }
+
+        .dot {
+            background-color: transparent;
+            padding: 4px 10px;
+            margin-left: 3px;
+            border: 1px solid white;
+        }
+
+        .dot:hover {
+            background-color: white;
+            transition: 300ms;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+        }
+
+        .f1 {
+            /* visibility: hidden; */
+        }
+
+        .f2 {
+            height: 59vh;
+            width: 100%;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            /* text-align: center; */
+            /* position: relative; */
+            position: absolute;
+            flex-direction: column;
+            background-color: red;
+            background-image: url("02.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .f2 {
+            /* visibility: hidden; */
+        }
+
+        .f3 {
+            height: 59vh;
+            width: 100%;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            /* text-align: center; */
+            position: relative;
+            flex-direction: column;
+            background-color: red;
+            background-image: url("3.jpg");
+            background-position:center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .f4 {
+            height: 59vh;
+            width: 100%;
+            color: white;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            /* text-align: center; */
+            position: relative;
+            position: absolute;
+            flex-direction: column;
+            background-color: red;
+            background-image: url("4\'.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .f2 {
+            /* display: none; */
+            position: absolute;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .f3 {
+            /* display: none; */
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .f4 {
+            /* display: none; */
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .carsoul {
+            display: flex;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .active {
+            background-color: white;
+        }
+
+        .btn-con {
+            position: absolute;
+            /* bottom: 25%;/ */
+            top: 13.5%;
+            left: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-bottom: 40px; */
+            z-index: 1;
+        }
+
+        .btn {
+            padding: 10px 50px;
+            background-color: darkorange;
+            margin-left: 0.1px;
+            /* border: 1px solid bl/ack; */
+
+        }
+
+        .wl {
+            padding: 20px 50px;
+
+        }
+
+        .wl a span {
+            color: white;
+        }
+
+        .pd {
+            padding: 14px 60px;
+            background-color: #ebebeb;
+            cursor: pointer;
+            /* border-right: 1px solid black; */
+
+        }
+
+        .pd a {
+            color: black;
+            font-size: 14px;
+            font-weight: 700;
+
+        }
+
+        .wl {
+            padding: 20px 60px;
+            border-right: none;
+            background-color: orangered;
+        }
+
+        .btn-con li:hover {
+            background-color: antiquewhite;
+        }
+
+        .tt {
+            height: 86vh;
+            width: 1000px;
+            margin: auto;
+            margin-top: 100px;
+            /* height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto; */
+        }
+
+        .par {
+            margin-top: 40px;
+        }
+
+        .bada {
+            background-color: whitesmoke;
+            width: 100%;
+        }
+
+        .pil {
+            height: 115vh;
+            width: 1000px;
+            margin: auto;
+
+            margin-top: 100px;
+            /* overflow-x: hidden; */
+            /* padding-bottom: 100px; */
+
+            /* height: 100vh;
+        width: 100vw; */
+        }
+
+        .pil h1 {
+            margin-top: 100px;
+        }
+
+        .img {
+            cursor: pointer;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 12vh;
+            opacity: 0.6;
+            /* background-image: url("gandhi.gif"); */
+            background-color: gray;
+        }
+
+        /* .img h1{
+        color: #ebebeb;
+       } */
+        .img:hover {
+            background-color: none;
+            background-image: url("gandhi.gif");
+            color: white;
+
+        }
+
+        .img h3:hover {
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .btn-pil {
+            margin-top: 10px;
+            background-color: gainsboro;
+            opacity: 0.5;
+            padding: 23px 5px;
+            font-weight: 600;
+        }
+
+        .btn-pil:hover {
+            background-color: #9e9898;
+        }
+
+        .image {
+            height: 270px;
+            width: 45%;
+        }
+
+        .image img {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .slider-pil-con {
+            margin-top: 20px;
+            width: 1000px;
+            position: relative;
+            /* overflow-x: hidden; */
+
+        }
+
+        .slide-pil1 {
+            display: flex;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            position: absolute;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+        }
+
+        .txt-con {
+            margin-left: 10%;
+            width: 1000px;
+
+            /* margin-bottom: 100%; */
+        }
+
+        /* .sldie-pil{
+        overflow: hidden;
+       } */
+        .pil {
+            overflow-x: hidden;
+        }
+
+        .txt-con {
+            width: 1000px;
+        }
+
+        .active {
+            background-color: green;
+            opacity: 1;
+            color: white;
+        }
+
+        .our_reach {
+            height: 80vh;
+            width: 100vw;
+            background-image: url('bg9.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-color: #243746;
+            background-attachment: fixed;
+        }
+
+        .container-1 {
+            height: 80%;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            width: 1000px;
+            margin: auto;
+            /* margin-top: 100px; */
+        }
+
+        .left-reach {
+            margin-top: 100px;
+            width: 50%;
+
+        }
+
+        .left-reach {
+            width: 50%;
+        }
+
+        .heading1 {
+            color: white;
+            margin-bottom: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .para1 {
+            color: white;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .img-con-reach {
+            display: flex;
+            margin-top: 50px;
+            width: 40%;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .img-r {
+            padding-right: 20px;
+            margin-right: 40px;
+        }
+
+        html body div.containe section.our_reach div.container-1 div.left-reach div.para1 div.img-con-reach div.img1.img-r h3 {
+            margin-left: 11px;
+        }
+
+        button {
+            /* outline: none;/ */
+            border: none;
+        }
+
+        .container-exp {
+            height: 100vh;
+            width: 1000px;
+            margin: auto;
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .con-exp {
+            height: 50%;
+            width: 37%;
+        }
+
+        .bg-exp {
+            height: 100%;
+            width: 100%;
+            background-image: url("gd.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: white;
+            padding: 10px 30px;
+        }
+
+        .bg-exp:hover {
+            transition-duration: 500ms;
+            transition-timing-function: ease-in-out;
+            /* transform-origin: 20%; */
+            /* transform: scale(101%); */
+            /* transform: scaleX(110%); */
+            cursor: pointer;
+            /* transform: rotateX('90deg'); */
+            /* transform: skewY(1deg);
+        transform: skewX(1deg); */
+            /* transform: matrix(12px); */
+            /* transform: scale3d(160%); */
+            /* transform: translateX(20px) ; */
+            transform: scale(104%);
+            /* transform: translateY(20px) ; */
+        }
+
+        .txt-exp {
+            /* display: flex; */
+            /* border: 0.1px solid gray; */
+            box-shadow: 0px 0px 1px 0px gray;
+
+            padding: 39px;
+            /* justify-content: flex-start; */
+            width: 100%;
+            /* margin: auto; */
+            /* padding-right: 40px; */
+            /* flex-direction: column; */
+
+        }
+
+        .con-exp1 {
+            height: 50%;
+            width: 17%;
+        }
+
+        .txt-exp1 {
+            padding: 22px 2px;
+        }
+
+        .txt-exp1:hover {
+            /* transition-duration: 3s;
+        transform-origin: top;
+        background-color: red;
+        
+        
+        transition-timing-function: ease-in; */
+            /* transform: skewY(20deg); */
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            background-color: antiquewhite;
+
+        }
+
+        .slider-g {
+            margin-top: 50px;
+            height: 100vh;
+            width: 65vw;
+            margin: auto;
+            /* background-color: red; */
+        }
+
+        .container-leader {
+            /* padding:30px 0px; */
+        }
+
+        h2 {
+            font-size: 30px;
+
+        }
+
+        @keyframes ss {
+            0% {
+                height: 0%;
+                background-color: red;
+            }
+
+            40% {
+                height: 15%;
+                background-color: red;
+            }
+
+            60% {
+                height: 25%;
+                background-color: red;
+            }
+
+            100% {
+                height: 40%;
+                background-color: red;
+            }
+        }
+
+        .linek {
+            height: 16px;
+            width: 100%;
+            /* width: 99.9%; */
+            background-color: #84BE39;
+        }
+
+        .col {
+
+            width: 50%;
+            height: 38vh;
+            /* background-color: darkslategray; */
+            /* background-color: #84BE39; */
+            border-right: 2px solid white;
+        }
+
+        .sub-col {
+            height: 100%;
+            width: 200px;
+            background-color: #d2e8b6;
+            /* background-color: #9e9898; */
+            /* float: right; */
+            float: right;
+        }
+
+        .row {
+            display: flex;
+
+        }
+
+        .col-f {
+            color: white;
+            height: 329px;
+            position: relative;
+            width: 60%;
+            background-color: #84BE39;
+            padding: 20px 20px;
+        }
+
+        .col-fs {
+            height: 329px;
+            position: relative;
+            width: 40%;
+            /* background-color: black; */
+            background: transparent;
+        }
+
+        .right-in {
+            position: absolute;
+            right: 0px;
+            width: 92%;
+            background-color: #eee9e9;
+            height: 329px;
+        }
+
+        .right-in-in {
+            float: right;
+            width: 18%;
+            height: 329px;
+            background-color: #d2e8b6;
+            z-index: 10;
+        }
+
+        .imag-con {
+            top: 30px;
+            position: absolute;
+            ;
+            width: 362px;
+            height: 269px;
+            background-color: blueviolet;
+            z-index: 5;
+
+        }
+
+        .imag-con img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .row-f {
+            display: flex;
+        }
+
+        .para-col {
+            font-size: 20px;
+            margin-top: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-style: italic;
+            color: white;
+        }
+
+        .author1 {
+            float: right;
+            /* margin-top: 0px; */
+            margin-bottom: 0px;
+
+        }
+
+        .author1 p {
+            /* margin-top: 0px; */
+            color: white;
+            font-size: 15px;
+            font-weight: 700;
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .change {
+            margin-top: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .row-hai {
+            /* overflow-x :scroll; */
+            /* overflow: hidden; */
+            position: relative;
+            /* width: 70vw; */
+            margin:auto;
+            background-color: rebeccapurple;
+            /* overflow: hidden; */
+
+        }
+
+        .container-karo {
+            transition-duration:1s;
+            transition-timing-function: ease-in-out;
+            display: flex;
+            width: 1000px;
+            position: absolute;
+            /* overflow-x: hidden; */
+            /* overflow: hidden; */
+        }
+        .bg-col{
+            height: 68px;
+margin: auto;
+  margin-top: auto;
+width: 190px;
+margin-right: 3px;
+margin-top: 329px;
+background-color: #eee9e9;
+float: right;
+        }
+        .yon{
+            height: 80vh;
+            width: 1000px;
+            padding: 12px 20px;
+            margin: auto;
+            /* border: 2px solid black; */
+        }
+        .box{
+            height: 67%;
+            width: 34.5%;
+         margin-top: 35px;
+            
+           
+            border-bottom: 12px solid black;
+            
+        }
+        .img-con-box{
+            height: 196px;
+  width: 330px;
+}
+        
+        .img-con-box img{
+            height: 100%;
+            width: 100%;
+        }
+        .row-box{
+            display: flex;
+            padding-top: 10px;
+            /* margin-top: 10px; */
+            justify-content:space-around;
+        }
+        .img-parag{
+            padding-top: 30px;
+            padding: 0px 10px;
+            background-color: #ebebeb;
+            padding-bottom: 30px;
+        }
+        footer{
+            height: 140vh;
+            width: 100vw;
+            color: white;
+            background-color: #243746;
+        }
+        .container-footer{
+            width: 1000px;
+            height: 100%;
+            margin:auto;
+            padding: 12px 30px;
+        }
+        .container-footer p a{
+            color: white;
+        }
+        .fo-col{
+            width: 30%;
+            margin-left: 70px;
+        }
+        .container-footer{
+            display: flex;
+            /* margin-top: 40px; */
+        }
+        .btn-con li:hover{
+           background-color: #9e9898;
+        }
+        .img12{
+            display: flex;
+            width: 30%;
+            padding-bottom: 23px;
+        }
+        /* .fir-1{
+            height: 70px;
+            width: 200px;
+            /* margin-right: 30px; */
+        /* } */ */
+        .fir-1 img{
+            height: 60%;
+            width: 60%;
+        }
+        .fir-2{
+                margin-left: 30px;
+        }
+        .containe{
+            position: relative;
+        }
+    .on-slider{
+        padding: 20px 0px;
+        position: absolute;
+        height: 30%;
+        overflow: hidden;
+        width: 20vw;
+        top: 70px;
+        margin: auto;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        z-index: 10;
+        /* background-color: rosybrown; */
+        background-color: #243746;
+        /* left : -30vw; */
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+        
+    }
+    .home{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .home p a{
+        color: white;
+    }
+    .ABOUT{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .ABOUT p a{
+        color: white;
+    }
+    .treading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .ABOUT {
+        color: white;
+    }
+    .treading p a{
+        color: white;
+    }
+    .about-as p a{
+        color: white;
+    }
+    .inter p a{
+        color: white;
+    }
+    .BLOG p a{
+    color: white;
+    }
+    .FAQ p a{
+        color: white;
+    }
+    .about-as{
+        color: white;
+    }
+    
+    .top-head{
+        font-size: 21px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .home-con{
+        display: none;
+    }
+    .about-con{
+        display: none;
+    }
+   .about-us-con{
+    display: none;
+   }
+   .contactus p a{
+    color: white;
+   }
+   .humburgger{
+    cursor: pointer;
+   }
+  
+   .home p{
+    cursor: pointer;
+    /* cursor: pointer; */
+    transition-duration: 1s;
+    /* transition-timing-function: ease-in-out; */
+    color: white;
+   }
+   /* .home-con{
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+   } */
+   .home{
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+
+   }
+   .ABOUT{
+    cursor: pointer;
+   }
+   .d-con{
+        display: flex;
+justify-content: center;
+width: 100%;
+/* height: 500px; */
+    
+}
+.about-as{
+    cursor: pointer;
+}
+.containe{
+    /* transition-duration: 2s; */
+    /* overflow: hidden; */
+}
+.badas{
+    transition-duration: 2s;
+
+}
+
+
+/* It is time of media query */
+@media only screen and (max-width: 600px) {
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .navigation-bar ul{
+        margin-left: 0px;
+    }
+    .navigation-bar ul li img{
+        height: 37px;
+    }
+    .navigation-bar .nav-btn {
+        right: 0px;
+        /* height: 400px; */
+    }
+    .navigation-bar .right-nav{
+        display: none;
+    }
+    .sm-l{
+        left: 185px;
+    }
+    .nav-btn{
+        position: relative;
+        /* left: 185px; */
+        margin-left: 10px;
+    }
+    .btn-h{
+        font-size: 12px;
+        padding: 3px 24px;
+    }
+    .tt{
+        height: 100%;
+        padding: 23px 30px;
+width: 100%;
+/* margin: auto; */
+  /* margin-top: auto; */
+margin-top: 80px;
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+/* margin: auto; */
+    }
+    .pil{
+        width: 100%;
+        height: 100%;
+        padding: 23px 40px;
+
+    }
+    .All-btn{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container-1{
+        width: 100%;
+        height: 100%;
+        padding: 23px 40px;
+        display: flex;
+
+    }
+    .left-reach{
+        width: 100%;
+
+    }
+    .right-reach{
+        width: 100%;
+    }
+    .btn-con{
+        display: none;
+    }
+    .container-exp{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin-top: 0px;
+        flex-direction: column;
+
+    }
+    .con-exp{
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .d-con{
+        display: flex;
+justify-content: center;
+width: 100%;
+height: 500px;
+    
+}
+.con-exp1{
+    height: 50%;
+width: 23%;
+}
+.container-karo{
+    width: 100%;
+   
+    flex-direction: column;
+   
+}
+.row-hai{
+    height: 100vh;
+    background-color: transparent;
+}
+.imag-con {
+  top: 19px;
+  position: absolute;
+  width: 100%;
+  height: 269px;
+  /* background-color: blueviolet; */
+  z-index: 5;
+  left: -60px;
+}
+.col-fs{
+    width: 120%;
+}
+.col-f {
+  color: white;
+  height: 329px;
+  position: relative;
+  width: 140%;
+  background-color: #84BE39;
+  padding: 20px 20px;
+  left: -55px;
+}
+.sub-col{
+    /* float: n; */
+    position: absolute;
+    right: 0px;
+}
+.yon{
+    width: 100%;
+    height: 100%;
+    margin-top: 24vh;
+}
+.box{
+    height: 100%;
+    width: 100%;
+}
+.img-con-box {
+  height: 50%;
+  width: auto;
+}
+.bg-col{
+    display: none;
+}
+.fo-col{
+    margin-left: 0px;
+    padding: 2px 76px;
+    width: 100%;
+    background-color: #243746;
+
+
+
+}
+
+.container-footer{
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.slide-pil1{
+    width: 100%;
+    flex-direction: column;
+    align-items: normal;
+}
+.image{
+    width: 85%;
+    height: 90%;
+    /* padding:px; */
+    padding-right: 30px;
+}
+.txt-con{
+    padding: 30px;
+    width: 100%;
+    margin-left: 0px;
+}
+.slider-pil-con{
+    height: 60vh;
+    width: 100vw;
+}
+.parag {
+    width: 84%;
+}
+.on-slider{
+    width: 100vw;
+}
+.col-fs {
+  height: 301px;
+  width: 80vw;
+}
+
+.col-f{
+    width: 100%;
+    height: 100%;
+    /* padding: 23px 60px; */
+    margin-left: 0;
+    margin-bottom: 40px;
+    left: 0;
+}
+#lead{
+    width: 100vw;
+    padding: 12px 30px;
+    margin-bottom: 23px;
+}
+.sub-col{
+    right: 10px;
+}
+.imag-con{
+left: 0px;
+}
+.footer{
+    overflow: hidden;
+}
+.navigation-bar{
+    overflow: hidden;
+}
+.fir-2{
+    margin-left: 0px;
+}
+}
+@media only screen and (max-width: 360px) {
+    
+    html{
+        overflow-x: hidden;
+    }
+       body{
+        /* background-color:red; */
+        overflow-x: hidden;
+       }
+       .yon{
+        margin-top: 32vh;
+       }
+.sub-col{
+    height: 65%;
+    width: 150px;
+}
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="containe">
+        <nav class="navigation-bar">
+            <div onclick="toggle_hub()" class="humburgger">
+                <div class="hum">
+                    <span class="top line"></span>
+                    <span class="middle line"></span>
+                    <span class="bottom line"></span>
+                </div>
+            </div>
+
+            <ul class="left-con">
+                <li><a href=""><img src="icon.png" alt=""></a></li>
+                <li class="sm-l"></li>
+                <li class="i-2"><a href=""><img src="1icon.png" alt=""></a></li>
+            </ul>
+            <div class="right-nav">
+                <ul class="social-link">
+                    <li class="social"><a href=""><i class="bi bi-facebook"></i></a></li>
+                    <li class="social"><a href=""><i class="bi bi-twitter"></i></a></li>
+                    <li class="social"><a href=""><i class="bi bi-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="btn-h">
+                    Interested in Gandhi Fellowship?
+
+                </button>
+            </div>
+        </nav>
+        <div class="on-slider">
+                 <div class="home">
+                    <div  class="heading">
+                    <p onclick="home_con_tog()"  class="top-head" >Home</p>
+                </div>
+                <div class="badas">
+                    <div class="home-con">
+                        <p><a href="">welcome</a></p>
+                        <p><a href="">Our pilars</a></p>
+                        <p><a href="">Our reach</a></p>
+                        <p><a href="">our programe</a></p>
+                        <p><a href="">jorney</a></p>
+                        <p><a href="">Trending</a></p>
+                        <p><a href="">webinars</a></p>
+                        <p><a href="">prospectus</a></p>
+                    </div>
+                </div>
+                 </div>
+                 <div class="ABOUT">
+                    <div class="heading">
+                    <P onclick="aboutfell()" class="top-head"> ABOUT THE FELLOSHIP</P>
+                </div>
+                    <div class="about-con">
+                        <p><a href="">introduction</a></p>
+                        <p><a href="">Beginnings & Today</a></p>
+                        <p><a href="">program We offer</a></p>
+                        <p><a href="">Jorney of A fellow</a></p>
+                        <p><a href="">Felloship Curriculum</a></p>
+                        <p><a href="">After felloship</a></p>
+                        <p><a href=""></a></p>
+                    </div>
+                 </div>
+                 <div  class="about-as">
+                    <div class="heading">
+                        <p onclick="aboutAs()" class="top-head" >about us</p>
+
+                    </div>
+                    <div class="about-us-con">
+                        <p>
+                            <a href="">About psl</a>
+
+                        </p>
+                        <p><a href="">KEF</a></p>
+                        <p><a href="">from ceo's desk</a></p>
+                    </div>
+                 </div>
+                 <div class="inter">
+                    <div class="heading">
+                        <p class="top-head" ><a href="">Interative fellows</a></p>
+                    </div>
+                 </div>
+                 <div class="BLOG">
+                    <div class="heading">
+                        <p class="top-head" ><a href="">BLOG</a></p>
+                    </div>
+                 </div>
+                 <div class="treading">
+                    <div class="heading">
+                        <p class="top-head" ><a href="">whats treading</a></p>
+
+                    </div>
+                    <div class="treading-con">
+                        <p><a href="Pr coverage "></a></p>
+                        <p class="top-head" ><a href="">Social stories</a></p>
+                    </div>
+                 </div>
+                 <div class="FAQ">
+                    <div class="heading">
+                        <p class="top-head" ><a href="">FAQS</a></p>
+                    </div>
+                 </div>
+                 <div class="contactus">
+                    <div class="heading">
+                        <p class="top-head" ><a href="">CONTACT US</a></p>
+                    </div>
+                 </div>
+        </div>
+
+        <section class="carsoul" id="car">
+            <div class="f1">
+
+                <div class="com-t">
+                    <div class="heading">
+
+                        <h1>The Gandhi
+                            <br>
+                            Fellowship Experience
+                        </h1>
+                    </div>
+                    <div class="para">
+                        <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                    </div>
+
+
+                </div>
+                <div class="split">
+                    <button onclick="sp()" class="dot"></button>
+                    <button onclick="spl()" class="dot"></button>
+                    <button onclick="slp()" class="dot"></button>
+                    <button onclick="sit()" class="dot"></button>
+                </div>
+            </div>
+         
+            <div class="f2">
+
+
+                <div class="com-t">
+                    <div class="heading">
+
+                        <h1>The Gandhi
+                            <br>
+                            Fellowship Experience
+                        </h1>
+                    </div>
+                    <div class="para">
+                        <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                    </div>
+
+
+                </div>
+                <div class="split">
+                    <button onclick="sp()" class="dot"></button>
+                    <button onclick="spl()" class="dot"></button>
+                    <button onclick="slp()" class="dot"></button>
+                    <button onclick="sit()" class="dot"></button>
+                </div>
+
+
+            </div>
+            <div class="f3">
+
+                <div class="com-t">
+                    <div class="heading">
+
+                        <h1>The Gandhi
+                            <br>
+                            Fellowship Experience
+                        </h1>
+                    </div>
+                    <div class="para">
+                        <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                    </div>
+
+
+                </div>
+                <div class="split">
+                    <button onclick="sp()" class="dot"></button>
+                    <button onclick="spl()" class="dot"></button>
+                    <button onclick="slp()" class="dot"></button>
+                    <button onclick="sit()" class="dot"></button>
+                </div>
+ 
+
+
+            </div>
+            <div class="f4">
+
+                <div class="com-t">
+                    <div class="heading">
+
+                        <h1>The Gandhi
+                            <br>
+                            Fellowship Experience
+                        </h1>
+                    </div>
+                    <div class="para">
+                        <p>do you have what it take to be a change maker?Begin your jorney today.</p>
+                    </div>
+
+
+                </div>
+                <!-- <div class="split">
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                     <button class="dot"></button>
+                 </div> -->
+                 <div class="split">
+                    <button onclick="sp()" class="dot"></button>
+                    <button onclick="spl()" class="dot"></button>
+                    <button onclick="slp()" class="dot"></button>
+                    <button onclick="sit()" class="dot"></button>
+                </div>
+            </div>
+        </section>
+
+        <ul class="btn-con">
+            <li class="pd wl"><a href=""><span>welcome</span></a></li>
+            <li class="pd"><a href="#dj"><span>OUR PILLERS</span></a></li>
+            <li class="pd"><a href="#our"><span>OUR REACH</span></a></li>
+            <li class="pd"><a href="#por"><span>OUR PROGRAMS</span></a></li>
+            <li class="pd"><a href="#jor"><span>JOURNEY</span></a></li>
+        </ul>
+
+
+
+        </section>
+
+        <div id="por" class="tt">
+            <h1>Awaken the Nation Builder in You</h1>
+            <p class="par">If you want to be a change agent, and play a key role in building our nation by taking all
+                challenges head-on and solving live problems, then <br> the Gandhi Fellowship awaits you.</p>
+            <p class="par">The Gandhi Fellowship was born from Mahatma Gandhi’s belief, ‘Be the change you wish to see
+                in this world’. The Fellowship, (an initiative of Piramal <br> Foundation), is a platform established in
+                2008 for every self-motivated Indian youth with a dream of seeing a thriving India by discovering and
+                building on the <br> leader within. A leader who will drive transformation in India. A nation-builder
+                who will ensure that no one is left behind. A committed citizen who will play <br> a key role in
+                creating a thriving India.</p>
+            <p class="par">Since inception, Gandhi Fellows have been living our motto of “Build Self, Build Nation” , as
+                they continue to inspire thousands of self-motivated youth across <br> India to follow the less trodden
+                path of this experiential, residential 2 year Fellowship. This immersive journey undertaken at the
+                grassroots of India, provides <br> an in-depth experience across areas of Public Health, Education and
+                Water.</p>
+            <p class="par">Today, our Fellows, building on the enriching Fellowship experience, are multi-sectoral
+                entrepreneurs or essaying key roles in organisations, fuelled by their <br> innate passion and spirit of
+                selflessness, as they spearhead large scale change.</p>
+            <p style="margin-top:20px;" class="par"> Come. Be the change.</p>
+
+        </div>
+        <div class="bada">
+            <section id="dj" class="pil">
+                <h1>Our Pillars</h1>
+                <p class="par">The two-year Gandhi Fellowship journey creates customised learning paths for diverse
+                    groups of fellows & equips them with the leadership skills to create positive, large scale and
+                    lasting change in our society by solving pressing social problems.</p>
+                <div class="img">
+                    <h3>This Gandhi fellow ship Experience</h3>
+
+                </div>
+
+                <section class="sldie-pil">
+                    <div class="All-btn">
+                        <button onclick="ls()" class="btn-pil" id="1">leading self</button>
+                        <button onclick="lg()" class="btn-pil" id="2">Leading in ground</button>
+                        <button onclick="lp()" class="btn-pil" id="3">Leading people</button>
+                        <button onclick="lo()" class="btn-pil" id="4">Leading Organzitional outcome</button>
+                        <button onclick="lb()" class="btn-pil" id="5">Leadership bootcome</button>
+                        <button onclick="lia()" class="btn-pil" id="6">Leading impact at scale</button>
+                    </div>
+                    <div class="slider-pil-con">
+                        <div class="slide-pil1">
+                            <div class="image">
+                                <img src="Leading-Self.jpg" alt="">
+                            </div>
+                            <div class="txt-con">
+                                <div class="title">
+                                    <h2 class="heading">1. Leading self</h2>
+                                </div>
+                                <div class="parag">
+                                    <p>Involves understading one's own feelings and emotional better</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-pil1">
+                            <div class="image">
+                                <img src="Leading-On-ground-Impact.jpg" alt="">
+                            </div>
+                            <div class="txt-con">
+                                <div class="title">
+                                    <h2 class="heading">2. Leading self</h2>
+                                </div>
+                                <div class="parag">
+                                    <p>Involves understading one's own feelings and emotional better</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-pil1">
+                            <div class="image">
+                                <img src="Leading-Organizational-Outcomes.jpg" alt="">
+                            </div>
+                            <div class="txt-con">
+                                <div class="title">
+                                    <h2 class="heading">3. Leading self</h2>
+                                </div>
+                                <div class="parag">
+                                    <p>Involves understading one's own feelings and emotional better</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-pil1">
+                            <div class="image">
+                                <img src="Leading-People.jpg" alt="">
+                            </div>
+                            <div class="txt-con">
+                                <div class="title">
+                                    <h2 class="heading">4. Leading self</h2>
+                                </div>
+                                <div class="parag">
+                                    <p>Involves understading one's own feelings and emotional better</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-pil1">
+                            <div class="image">
+                                <img src="Leadership-Bootcamps1.jpg" alt="">
+                            </div>
+                            <div class="txt-con">
+                                <div class="title">
+                                    <h2 class="heading">5. Leading self</h2>
+                                </div>
+                                <div class="parag">
+                                    <p>Involves understading one's own feelings and emotional better</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide-pil1">
+                            <div class="image">
+                                <img src="Leading-Self.jpg" alt="">
+                            </div>
+                            <div class="txt-con">
+                                <div class="title">
+                                    <h2 class="heading">6. Leading self</h2>
+                                </div>
+                                <div class="parag">
+                                    <p>Involves understading one's own feelings and emotional better</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+        <section id="our" class="our_reach">
+            <div class="container-1">
+                <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="left-reach">
+                    <div class="heading1">
+                        <h1>Our Reach</h1>
+                    </div>
+                    <div style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="para1">
+                        From a humble beginning with 10 fellows and a single program in one state (Rajasthan), we have
+                        expanded our horizons to:
+                        <div class ="img-con-reach">
+                            <div class="img1 img-r">
+                                <img src="l.png" alt="">
+                                <h3>25</h3>
+                                <p class="para">STATES</p>
+                            </div>
+                            <div class="img2 img-r">
+                                <img src="fellows.png" alt="">
+                                <h3>1700+</h3>
+                                <p class="para">FELLOWS</p>
+                            </div>
+                            <div class="img3 img-r">
+                                <img src="program_icon.png" alt="">
+                                <h3>112</h3>
+                                <p class="para">DISTRICT</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-reach">
+
+                </div>
+            </div>
+        </section>
+        <section id="jor" class="container-exp">
+            <div class="con-exp">
+                <div class="bg-exp">
+                    <h1>our journey <br> so far</h1>
+                </div>
+                <div class="txt-exp">
+                    <h3>2008</h3>
+                    <h5>The Beginning Of The Journey</h5>
+                </div>
+            </div>
+
+      <div class="d-con">
+            <div class="con-exp1">
+                <div class="bg-exp">
+
+                </div>
+                <div class="txt-exp1">
+                    <h3>2008</h3>
+                    <h5>The Beginning Of The Journey</h5>
+                </div>
+            </div>
+            <div class="con-exp1">
+                <div class="bg-exp">
+
+                </div>
+                <div class="txt-exp1">
+                    <h3>2008</h3>
+                    <h5>The Beginning Of The Journey</h5>
+                </div>
+            </div>
+            <div class="con-exp1">
+                <div class="bg-exp">
+
+                </div>
+                <div class="txt-exp1">
+                    <h4>2008</h4>
+                    <h6>The Beginning Of The Journey</h6>
+                </div>
+            </div>
+            <div class="con-exp1">
+                <div class="bg-exp">
+
+                </div>
+                <div class="txt-exp1">
+                    <h4>2008</h4>
+                    <p>The Beginning Of The Journey</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <div class="linek"></div>
+    <section id="lead" class="slider-g">
+        <div class="container-leader">
+            <div class="row">
+                <div class="col">
+                    <h2 class="change">What Our Change <br> Leaders Have <br> To Say </h2>
+                </div>
+                <div class="col">
+                    <div class="sub-col"></div>
+                </div>
+            </div>
+            <div class="row-hai">
+                <div class="container-karo">
+                    <div class="col-fs">
+                        <div class="imag-con">
+                            <img src="Leadership-Bootcamps1.jpg" alt="">
+                        </div>
+                        <div class="in">
+                            <div class="right-in">
+                                <div class="right-in-in"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-f">
+                        <div class="title">
+                            <h2>1Tanushree Sharma,</h2>
+                            <small>Gandhi Fellowship Alumna</small>
+                        </div>
+                        <div class="para-col">
+                            <p>“Gandhi Fellowship program shaped me as an individual and gave me a distinct identity
+                                purely because of the unorthodox and grass roots level experience it provided”</p>
+                        </div>
+                        <div class="author1">
+                            <p style="margin-bottom: 0px; margin-left: 40px;">Batch 10</p>
+                            <p>jhuanpur Rajistan</p>
+                        </div>
+                        <div class="split">
+                            <button onclick="exp()" class="dot"></button>
+                            <button onclick="ex()" class="dot"></button>
+                            <button onclick="ep()"class="dot"></button>
+                            <button onclick="exp()" class="dot"></button>
+                            <button  onclick="ex()" class="dot"></button>
+                            <button onclick="ep()" class="dot"></button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-karo">
+                    <div class="col-fs">
+                        <div class="imag-con">
+                            <img src="Leadership-Bootcamps1.jpg" alt="">
+                        </div>
+                        <div class="in">
+                            <div class="right-in">
+                                <div class="right-in-in"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-f">
+                        <div class="title">
+                            <h2>2Tanushree Sharma,</h2>
+                            <small>Gandhi Fellowship Alumna</small>
+                        </div>
+                        <div class="para-col">
+                            <p>“Gandhi Fellowship program shaped me as an individual and gave me a distinct identity
+                                purely because of the unorthodox and grass roots level experience it provided”</p>
+                        </div>
+                        <div class="author1">
+                            <p style="margin-bottom: 0px; margin-left: 40px;">Batch 10</p>
+                            <p>jhuanpur Rajistan</p>
+                        </div>
+                        <div class="split">
+                            <button onclick="exp()" class="dot"></button>
+                            <button onclick="ex()" class="dot"></button>
+                            <button onclick="ep()"class="dot"></button>
+                            <button onclick="exp()" class="dot"></button>
+                            <button  onclick="ex()" class="dot"></button>
+                            <button onclick="ep()" class="dot"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-karo">
+                    <div class="col-fs">
+                        <div class="imag-con">
+                            <img src="Leadership-Bootcamps1.jpg" alt="">
+                        </div>
+                        <div class="in">
+                            <div class="right-in">
+                                <div class="right-in-in"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-f">
+                        <div class="title">
+                            <h2>3Tanushree Sharma,</h2>
+                            <small>Gandhi Fellowship Alumna</small>
+                        </div>
+                        <div class="para-col">
+                            <p>“Gandhi Fellowship program shaped me as an individual and gave me a distinct identity
+                                purely because of the unorthodox and grass roots level experience it provided”</p>
+                        </div>
+                        <div class="author1">
+                            <p style="margin-bottom: 0px; margin-left: 40px;">Batch 10</p>
+                            <p>jhuanpur Rajistan</p>
+                        </div>
+
+                        <div class="split">
+                            <button onclick="exp()" class="dot"></button>
+                            <button onclick="ex()" class="dot"></button>
+                            <button onclick="ep()"class="dot"></button>
+                            <button onclick="exp()" class="dot"></button>
+                            <button  onclick="ex()" class="dot"></button>
+                            <button onclick="ep()" class="dot"></button>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="bg-col">
+    
+        </div>
+    </section>
+
+    <section class="yon">
+        <div class="title">
+            <h2>In the News</h2>
+        </div>
+        <div class="box">
+            <div class="img-con-box">
+                <img src="Leadership-Bootcamps1.jpg" alt="">
+            </div>
+            <div class="img-parag">
+                <div class="row-box">
+                    <p>Education</p>
+                    <p>03-oct-2022</p>
+                </div>
+                <div class="paras">
+                    On Gandhi Jayanti, let’s remind ourselves of transformative power of our youth, need to tap into it
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="linek"></div>
+    </div>
+
+<footer>
+<div class="container-footer">
+    <div class="fo-col">
+    <div class="img12">
+        <div class="fir-1">
+            <img src="icon.png" alt="">
+        </div>
+        <div class="fir-2">
+            <img src="1icon.png" alt="">
+        </div>
+
+    </div>
+    <div class="para-fo">
+        <p>
+            91 Springboard Business Hub Pvt. Ltd., B-l / H-3, Mathura Rd, Mohan Cooperative Industrial Estate, New Delhi, 110044 </p>
+    </div>
+    <div class="para-fo1">
+        <p> North Zone:</p>
+        <p>Meheli Basu</p>
+        <p>+91 9836933729</p>
+        <p><a href="meheli.basu@gandhifellowship.org">meheli.basu@gandhifellowship.org</a></p>
+        <p>Avneet Kaur</p>
+        <p>+91 8005448484</p>
+        <p>amrit.anand@gandhifellowship.org</p>
+        <p>Nasir Hassan</p>
+        <p>+91 8240434853</p>
+        <p><a href="nasir.hassan@gandhifellowship.org">nasir.hassan@gandhifellowship.org</a></p>
+    </div>
+
+    <div class="south-zone">
+        <p>R. Manohar</p>
+        <p>+91 9686099638</p>
+        <p><a href="renuka.manohar@gandhifellowship.org">renuka.manohar@gandhifellowship.org</a></p>
+    </div>
+    <div class="north-zone">
+        <p>Nilakshi Chakraborty</p>
+        <p>+91 6003293825</p>
+        <p><a href="nilakshi.chakraborty@gandhifellowship.org">nilakshi.chakraborty@gandhifellowship.org</a></p>
+    </div>
+    <p>Monday to Saturday </p>
+    <p>(10 AM to 5 PM)</p>
+</div>
+<div class="fo-col">
+    <div class="heading-fot">
+
+        ABOUT THE <br> FELLOWSHIP</div>
+        <div class="intro">
+            <p><a href="">introduction</a></p>
+            <p><a href="">Beginnings & Today</a></p>
+            <p><a href="">Programs We Offer</a></p>
+            <p><a href="">Journey Of A Fellow</a></p>
+            <p><a href="">Fellowship Curriculum</a></p>
+            <p><a href="">After Fellowship</a></p>
+        </div>
+</div>
+
+<div class="fo-col">
+    <div class="heading">
+        About PSL
+    </div>
+    <!-- <p><a href=""></a></p> -->
+    <p><a href="">KEF</a></p>
+    <p><a href="">From CEO's desk</a></p>
+    <p><a href="">BLOG</a></p>
+
+</div>
+<div class="fo-col">
+<div class="heading">
+    <p>WHAT'S TRENDING</p>
+</div>
+<p><a href="">PR Coverage</a></p>
+<p><a href="">Social Stories</a></p>
+<p><a href="">FAQs</a></p>
+</div>
+<div class="fo-col">
+    <div class="heading">
+        <p>INTERACTIVE FELLOW CORNER</p>
+        <p>Contact Us</p>
+    </div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+    <script>
+        var car = document.querySelectorAll("#car");
+        var btn = document.querySelectorAll(".split");
+        console.log(btn);
+        car = Array.from(car[0].childNodes)
+        let slideIndex = 2;
+
+        // console.log(car);
+        let counter = 0;
+        let f1 = car[1];
+        let f2 = car[3]
+        let f3 = car[5]
+        let f4 = car[7]
+        let arr = new Array();
+        arr[0] = f1;
+        arr[1] = f2;
+        arr[2] = f3;
+        arr[3] = f4;
+        // console.log(arr)
+        arr.forEach((slide, index) => {
+            slide.style.left = `${index * 100}%`
+            // console.log(slide, index)
+        })
+
+        const slideImage = () => {
+            arr.forEach((slide) => {
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            })
+        }
+        function myfunc1() {
+            counter = 0;
+            slideImage();
+        }
+        function myfunc() {
+            counter++;
+            slideImage()
+
+
+        }
+        // setInterval(myfunc, 3000)
+        // setInterval(myfunc1 , 9000)
+
+        // var slide =0;
+        // setInterval(myincr, 1000)
+        // function myincr(){
+
+        // }
+        // for(let i =0; i<4 ; i++){
+        //     if(i==slide){
+        //         arr[slide].style.display = "Block";
+        //         slide = slide + 1
+        //         setTimeout(1000)
+        //     }
+        //     else{
+        //     arr[i].style.display = "none";
+        // }
+        // }
+
+        let pil_con = 0;
+        let pil = document.querySelectorAll(".slide-pil1");
+        pil.forEach((slide1, index1) => {
+            console.log(slide1, index1)
+            slide1.style.left = `${index1 * 100}%`;
+
+        })
+        let slide_trans = () => {
+            pil.forEach((slide) => {
+
+                slide.style.transform = `translateX(-${pil_con * 100}%)`
+            })
+
+        }
+        slide_trans();
+
+
+
+    </script>
+    <script>
+        function ls() {
+            let pil = document.querySelectorAll(".slide-pil1");
+            let btn = document.getElementById('1');
+            console.log(btn)
+            btn.classList.add('active');
+            let counter = 0;
+            document.querySelectorAll('.btn-pil').forEach((slide, index) => { if (index == counter) { slide.classList.add('active') } else { slide.classList.remove('active') } })
+            pil.forEach((slide) => {
+
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            })
+        }
+
+        function lg() {
+            let pil = document.querySelectorAll(".slide-pil1");
+            let btn = document.getElementById('2');
+            btn.classList.add('active');
+            let counter = 1;
+            document.querySelectorAll('.btn-pil').forEach((slide, index) => { if (index == counter) { slide.classList.add('active') } else { slide.classList.remove('active') } })
+            pil.forEach((slide) => {
+
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            })
+        }
+        function lp() {
+            let pil = document.querySelectorAll(".slide-pil1");
+            let btn = document.getElementById('3');
+            btn.classList.add('active');
+            let counter = 2;
+            document.querySelectorAll('.btn-pil').forEach((slide, index) => { if (index == counter) { slide.classList.add('active') } else { slide.classList.remove('active') } })
+            pil.forEach((slide) => {
+
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            })
+        }
+        function lo() {
+            let pil = document.querySelectorAll(".slide-pil1");
+            let btn = document.getElementById('4');
+            btn.classList.add('active');
+            let counter = 3;
+            document.querySelectorAll('.btn-pil').forEach((slide, index) => { if (index == counter) { slide.classList.add('active') } else { slide.classList.remove('active') } })
+            pil.forEach((slide) => {
+
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            })
+        }
+        function lb() {
+            let pil = document.querySelectorAll(".slide-pil1");
+            let btn = document.getElementById('5');
+            btn.classList.add('active');
+            let counter = 4;
+            document.querySelectorAll('.btn-pil').forEach((slide, index) => { if (index == counter) { slide.classList.add('active') } else { slide.classList.remove('active') } })
+            pil.forEach((slide) => {
+
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            })
+        }
+        function lia() {
+            let pil = document.querySelectorAll(".slide-pil1");
+            let btn = document.getElementById('6');
+            let counter = 5;
+
+
+
+            document.querySelectorAll('.btn-pil').forEach((slide, index) => { if (index == counter) { slide.classList.add('active') } else { slide.classList.remove('active') } })
+
+
+
+            pil.forEach((slide) => {
+
+                slide.style.transform = `translateX(-${counter * 100}%)`
+            })
+        }
+ls();
+
+
+
+
+
+    </script>
+    <script>
+        let can = document.querySelectorAll('.container-karo');
+        can.forEach((slide, index) => {
+            console.log(slide, index)
+            slide.style.left = `${160 * index}%`;
+
+            let slide_inc = 2;
+
+         it_trans = () => {
+                can.forEach((slide) => {
+                    console.log(slide_inc)
+                    slide.style.transform = `translateX(-${slide_inc* 160}%)`
+                })
+            }
+
+        })
+        //  function exp(){
+        //     let ls = document.querySelectorAll('.container-karo');
+
+        //     let counter_e = 1;
+        //     ls.forEach((sldie)=>{
+        //         console.log(slide)
+        //         slide.style.transform = `translateX(-${counter_e * 160}%)`
+        //     })
+        // }
+        it_trans();
+
+
+        function ep(){
+            let ls = document.querySelectorAll('.container-karo');
+            let cs = 2;
+            ls.forEach((slide) => {
+                    // console.log(slide_inc)
+                    slide.style.transform = `translateX(-${cs* 160}%)`
+                })
+        }
+        function ex(){
+            let ls = document.querySelectorAll('.container-karo');
+            let cs = 1;
+            ls.forEach((slide) => {
+                    // console.log(slide_inc)
+                    slide.style.transform = `translateX(-${cs* 160}%)`
+                })
+        }
+        function exp(){
+            let ls = document.querySelectorAll('.container-karo');
+            let cs = 0;
+            ls.forEach((slide) => {
+                    // console.log(slide_inc)
+                    slide.style.transform = `translateX(-${cs* 160}%)`
+                })
+        }
+// sdk()
+    </script>
+<script>
+    function sp(){
+       let  lks = 0;
+        arr.forEach((slide) => {
+        slide.style.transform = `translateX(-${lks * 100}%)`
+        
+    })
+    }
+    function spl(){
+       let  lks = 1;
+        arr.forEach((slide) => {
+        slide.style.transform = `translateX(-${lks * 100}%)`
+    })
+    }
+    function slp(){
+       let  lks = 2;
+        arr.forEach((slide) => {
+        slide.style.transform = `translateX(-${lks * 100}%)`
+    })
+    }
+    function sit(){
+       let  lks = 3;
+        arr.forEach((slide) => {
+        slide.style.transform = `translateX(-${lks * 100}%)`
+    })
+    }
+    // setInterval(sp, 5000);
+    // setTimeout(sp,5000)
+    setInterval(spl, 10000);
+    // // setTimeout(spl,5000)
+    // setInterval(slp,8000);
+    // // setTimeout(slp,5000)
+    // setInterval(sit, 11000);
+    // setTimeout(sit,5000)
+     
+ </script>
+ <script>
+ let onslider = document.querySelectorAll('.on-slider');
+ onslider[0].style.left ="-102vw";
+ let home_con =document.querySelectorAll('.home-con');
+
+ let toggle = false; 
+ function toggle_hub(){
+     console.log("clicking .....")
+     if(toggle == false){
+        toggle = true;
+        console.log(toggle);
+        onslider[0].style.left ="0"
+        // toggle = false;
+    }
+    else{
+        toggle = false;
+        console.log(toggle);
+        onslider[0].style.left ="-102vw"
+    }
+
+//  }
+//  let home_con_val = false;
+//  function home_con(){
+//     console.log("clicking.........")
+//     if(home_con_val == false){
+//         home_con_val = true;
+//         home_con[0].style.display = "block";
+//     }
+//     else{
+//         home_con_val  = false;
+//         home_con[0].style.display = "none"
+//     }
+  
+
+ }
+ 
+    // onslider.style.left = `-${ind *100}}%`;
+    // onslider.style.left ="-30vw"
+    // slide.style.left = `${index * 100}%`
+ </script>
+ <script>
+    let home_cont = document.querySelectorAll('.home-con');
+    // console.log(home_cont)
+    home_conts = home_cont[0];
+    let home_con_val = false;
+    console.log(home_conts)
+    function home_con_tog(){
+      if(home_con_val == false){
+        home_con_val = true;
+        home_conts.style.display = "block";
+
+      }
+      else{
+        home_con_val = false;
+        home_conts.style.display = "none";
+      }
+    }
+
+let aboutas_con = document.querySelectorAll('.about-us-con');
+// console.log(aboutas_con)
+aboutas_con_s = aboutas_con[0];
+aboutas_con_val = false;
+    function aboutAs(){
+        //    aboutas_con_s 
+           if(aboutas_con_val == false){
+               aboutas_con_val = true;
+                aboutas_con_s.style.display = "block";
+           }
+           else{
+            aboutas_con_val = false;
+            aboutas_con_s.style.display = "none";
+           }
+    }
+
+    let fello = document.querySelectorAll('.about-con');
+    let fello_about = fello[0];
+    let fello_about_val = false ;
+ function  aboutfell(){
+    if(fello_about_val == false){
+        fello_about.style.display = "block"
+        fello_about_val = true;
+    }
+    else{
+        fello_about.style.display = "none";
+        fello_about_val = false;
+    }
+ }
+
+ </script>
+</body>
+
+</html>
